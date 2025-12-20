@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MnS Classes - Mentoring for Success. Premium personalized tutoring in Math, Science, Coding & English for Grades 6-12. Expert IIT Kharagpur educator. Online & Offline classes in Jaipur. CBSE, ICSE, IIT-JEE, SAT, AP exam preparation.">
+    <meta name="keywords" content="Math tutor Jaipur, Online coding classes, IIT-JEE coaching, SAT Math tutor, AP Calculus tutoring, CBSE coaching, ICSE tuition, personalized tutoring, coding classes Jaipur, English tutor">
+    <meta name="author" content="MnS Classes - Amit Gupta">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MnS Classes - Mentoring for Success | Premium Tutoring Academy">
+    <meta property="og:description" content="Personalized coaching in Math, Science, Coding & English. Expert IIT Kharagpur educator. 200+ students globally. Online & Offline classes.">
+    <meta property="og:url" content="https://mnsclasses.com">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MnS Classes - Mentoring for Success">
+    <meta property="twitter:description" content="Premium personalized tutoring for Grades 6-12. Expert IIT educator. Proven results.">
+    
+    <title>MnS Classes - Mentoring for Success | Premium Tutoring Academy | Math, Science, Coding & English</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0d47a1;
+            --deep-blue: #0a2960;
+            --navy: #1e3a8a;
+            --accent-orange: #ff9800;
+            --accent-green: #4caf50;
+            --light-bg: #f8fafc;
+            --white: #ffffff;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --shadow: 0 4px 20px rgba(0,0,0,0.1);
+            --shadow-hover: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* ===== NAVBAR ===== */
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--navy) 100%);
+            box-shadow: var(--shadow);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--white) !important;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .navbar-brand i {
+            color: var(--accent-orange);
+        }
+
+        .nav-link {
+            color: rgba(255,255,255,0.95) !important;
+            font-weight: 500;
+            margin: 0 0.5rem;
+            padding: 0.5rem 1rem !important;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-orange) !important;
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-2px);
+        }
+
+        .navbar-toggler {
+            border: none;
+            color: var(--white);
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, var(--deep-blue) 0%, var(--navy) 50%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 140px 20px 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,152,0,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(76,175,80,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-40px) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: rgba(255,255,255,0.95);
+        }
+
+        .hero .subheading {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .hero-badge {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .hero-badge:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #f57c00 100%);
+            color: var(--white);
+            font-weight: 600;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255,152,0,0.3);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,152,0,0.4);
+            color: var(--white);
+        }
+
+        .btn-secondary-custom {
+            background: transparent;
+            color: var(--white);
+            font-weight: 600;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border: 2px solid var(--white);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-secondary-custom:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        /* ===== SECTIONS ===== */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin-bottom: 60px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
+            margin: 20px auto 0;
+            border-radius: 5px;
+        }
+
+        .section-light {
+            background-color: var(--light-bg);
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .about-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .about-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .highlight-card {
+            background: var(--white);
+            padding: 35px 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent-orange);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .highlight-card i {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        .highlight-card h4 {
+            color: var(--text-dark);
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .highlight-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        /* ===== TDPA PHILOSOPHY ===== */
+        .tdpa-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .tdpa-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tdpa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .tdpa-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 5px solid var(--accent-green);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tdpa-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--accent-green), var(--accent-orange));
+        }
+
+        .tdpa-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .tdpa-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .tdpa-card h3 {
+            color: var(--primary-blue);
+            font-weight: 800;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .tdpa-card p {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .philosophy-details {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            margin-top: 40px;
+        }
+
+        .philosophy-details h4 {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .philosophy-list {
+            list-style: none;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .philosophy-list li {
+            padding: 15px 0;
+            color: var(--text-light);
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .philosophy-list li:last-child {
+            border-bottom: none;
+        }
+
+        .philosophy-list li::before {
+            content: '✓';
+            color: var(--accent-green);
+            font-weight: 900;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* ===== COURSES SECTION ===== */
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .course-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-orange);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .course-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .course-card h3 {
+            color: var(--primary-blue);
+            font-weight: 800;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .course-card ul {
+            list-style: none;
+            padding: 0;
+            color: var(--text-light);
+            font-size: 1rem;
+            flex-grow: 1;
+        }
+
+        .course-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+        }
+
+        .course-card li:last-child {
+            border-bottom: none;
+        }
+
+        .course-card li::before {
+            content: '✓';
+            color: var(--accent-green);
+            font-weight: 900;
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        .course-info {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px solid #e2e8f0;
+            text-align: center;
+        }
+
+        .course-info p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin: 5px 0;
+        }
+
+        .course-info strong {
+            color: var(--primary-blue);
+        }
+
+        /* ===== MODES OF LEARNING ===== */
+        .modes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .mode-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .mode-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .mode-icon {
+            font-size: 3.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .mode-card h4 {
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .mode-card p {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        /* ===== FACULTY SECTION ===== */
+        .faculty-section {
+            background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+        }
+
+        .faculty-card {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: var(--shadow-hover);
+        }
+
+        .faculty-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .faculty-avatar {
+            width: 180px;
+            height: 180px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--white);
+            margin: 0 auto 30px;
+            box-shadow: 0 10px 40px rgba(13,71,161,0.3);
+        }
+
+        .faculty-name {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        .faculty-title {
+            color: var(--accent-orange);
+            font-weight: 600;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .faculty-credentials {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .faculty-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-bottom: 40px;
+        }
+
+        .info-block {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .info-block h5 {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-block h5 i {
+            color: var(--accent-orange);
+        }
+
+        .info-block ul {
+            list-style: none;
+            padding: 0;
+            color: var(--text-light);
+        }
+
+        .info-block li {
+            padding: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .info-block li::before {
+            content: '→';
+            color: var(--accent-green);
+            font-weight: 900;
+            margin-right: 12px;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .faculty-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            background: var(--light-bg);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-blue);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        .social-links h5 {
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .social-links a i {
+            margin-right: 8px;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            border-top: 4px solid var(--accent-orange);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .testimonial-stars {
+            color: var(--accent-orange);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+
+        .testimonial-text {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.9;
+            font-size: 1.05rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1rem;
+        }
+
+        .testimonial-role {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-section {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--navy) 100%);
+            color: var(--white);
+        }
+
+        .contact-section .section-title {
+            color: var(--white);
+        }
+
+        .contact-section .section-title::after {
+            background: linear-gradient(90deg, var(--accent-orange), var(--accent-green));
+        }
+
+        .contact-section .section-subtitle {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .contact-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .contact-item i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--accent-orange);
+        }
+
+        .contact-item h4 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: rgba(255,255,255,0.95);
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .contact-item a:hover {
+            color: var(--accent-orange);
+            text-decoration: underline;
+        }
+
+        .contact-cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--deep-blue);
+            color: var(--white);
+            padding: 50px 20px 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-brand {
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 15px;
+        }
+
+        .footer-tagline {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .footer-links a {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer-info {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: rgba(255,255,255,0.8);
+            font-size: 0.95rem;
+        }
+
+        .footer-info p {
+            margin: 8px 0;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .faculty-card {
+                padding: 35px 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 100px 20px 80px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero .subheading {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 60px 15px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .btn-primary-custom,
+            .btn-secondary-custom {
+                padding: 12px 30px;
+                font-size: 1rem;
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .faculty-name {
+                font-size: 1.8rem;
+            }
+
+            .faculty-avatar {
+                width: 140px;
+                height: 140px;
+                font-size: 4rem;
+            }
+
+            .contact-cta-buttons {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-badge {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .tdpa-card,
+            .course-card,
+            .mode-card {
+                padding: 25px 20px;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== SCROLL TO TOP BUTTON ===== */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            background: var(--accent-orange);
+            transform: translateY(-5px);
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "MnS Classes - Mentoring for Success",
+        "description": "Premium personalized tutoring academy offering Math, Science, Coding, and English courses for Grades 6-12",
+        "url": "https://mnsclasses.com",
+        "logo": "https://mnsclasses.com/logo.png",
+        "foundingDate": "2019-06",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pushpanjali Colony",
+            "addressLocality": "Jaipur",
+            "postalCode": "302015",
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9241229184",
+            "contactType": "Educational Support",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Amit Gupta",
+            "jobTitle": "Founder & Lead Mentor",
+            "alumniOf": {
+                "@type": "CollegeOrUniversity",
+                "name": "IIT Kharagpur"
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "itemOffered": {
+                "@type": "Course",
+                "name": "Mathematics, Science, Coding, and English Tutoring",
+                "educationalLevel": "Middle School, High School",
+                "courseMode": "Online, Offline"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-graduation-cap"></i> MnS Classes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#philosophy">Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#modes">Learning Modes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>MnS Classes</h1>
+            <p class="tagline">Mentoring for Success</p>
+            <p class="subheading">Personalized Learning. Proven Results.</p>
+            <p class="subheading" style="font-size: 1.1rem; margin-top: -1rem;">Conceptual Clarity to Real-World Excellence</p>
+            
+            <div class="hero-badges">
+                <div class="hero-badge">🎓 Established June 2019</div>
+                <div class="hero-badge">🌍 Global Teaching Experience</div>
+                <div class="hero-badge">📚 Grades 6-12 | CBSE | ICSE | International</div>
+                <div class="hero-badge">🏆 IIT-JEE | SAT | ACT | AP Exams</div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#contact" class="btn-primary-custom">
+                    <i class="fas fa-calendar-check"></i> Book a Free Demo Class
+                </a>
+                <a href="tel:+919241229184" class="btn-secondary-custom">
+                    <i class="fas fa-phone"></i> Talk to a Mentor
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about">
+        <div class="about-content">
+            <h2 class="section-title">About MnS Classes</h2>
+            <p class="section-subtitle">Transforming academic lives through personalized mentoring and proven methodologies</p>
+            
+            <div class="about-text">
+                <p><strong>MnS Classes – Mentoring for Success</strong> is a premier tutoring academy established in <strong>June 2019</strong>, dedicated to providing personalized coaching that transforms academic lives. We believe every student has unique potential, and our mission is to unlock it through innovative teaching, individual attention, and proven methodologies.</p>
+                
+                <p>We specialize in <strong>Math, Science, Coding, and Language skills</strong> across multiple boards and competitive exams. Our commitment to conceptual clarity, practical problem-solving, and individual attention has resulted in measurable academic growth for <strong>200+ students globally</strong>.</p>
+                
+                <p>Led by an <strong>IIT Kharagpur-educated mentor</strong>, MnS Classes blends conceptual clarity with practical application using our unique <strong>TDPA methodology</strong> (Teach, Discuss, Practice, Apply). We focus on individual attention, measurable improvement, and global teaching experience.</p>
+            </div>
+
+            <div class="about-highlights">
+                <div class="highlight-card">
+                    <i class="fas fa-book-open"></i>
+                    <h4>What We Teach</h4>
+                    <p>Math, Science, Coding, Language across CBSE, ICSE, International Boards, IIT-JEE, SAT, ACT, AP exams</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-bullseye"></i>
+                    <h4>Our Focus</h4>
+                    <p>Conceptual clarity, practical problem-solving, and individual attention for measurable academic growth</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-clock"></i>
+                    <h4>Optimized Learning</h4>
+                    <p>Every second spent together is optimized for success with personalized learning plans unique to each student</p>
+                </div>
+                <div class="highlight-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Proven Results</h4>
+                    <p>Supports students to improve their scholastics through long-term academic foundation building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEACHING PHILOSOPHY SECTION ===== -->
+    <section id="philosophy" class="section-light">
+        <div class="tdpa-container">
+            <h2 class="section-title">Our Teaching Philosophy</h2>
+            <p class="tdpa-intro">The <strong>TDPA Methodology</strong> – A proven approach to academic excellence that ensures conceptual mastery and real-world application</p>
+
+            <div class="tdpa-grid">
+                <div class="tdpa-card fade-in">
+                    <span class="tdpa-icon">📚</span>
+                    <h3>Teach</h3>
+                    <p>Clear, concept-focused instruction tailored to individual learning styles. We build strong foundations through structured, engaging lessons.</p>
+                </div>
+                <div class="tdpa-card fade-in">
+                    <span class="tdpa-icon">💬</span>
+                    <h3>Discuss</h3>
+                    <p>Interactive dialogue to deepen understanding and resolve doubts. Every question is welcomed, every concept is explored thoroughly.</p>
+                </div>
+                <div class="tdpa-card fade-in">
+                    <span class="tdpa-icon">✏️</span>
+                    <h3>Practice</h3>
+                    <p>Rigorous problem-solving with guided practice and immediate feedback. Mastery comes through consistent, focused practice.</p>
+                </div>
+                <div class="tdpa-card fade-in">
+                    <span class="tdpa-icon">🚀</span>
+                    <h3>Apply</h3>
+                    <p>Real-world application and mastery assessment for lasting learning. Connect concepts to practical scenarios and exam success.</p>
+                </div>
+            </div>
+
+            <div class="philosophy-details">
+                <h4>Why TDPA Works</h4>
+                <ul class="philosophy-list">
+                    <li><strong>Personalized Learning Plans:</strong> Unique to each student's pace, learning style, and academic goals</li>
+                    <li><strong>Scholastic Improvement:</strong> Supports students to improve their scholastics through structured methodology</li>
+                    <li><strong>Optimized Time:</strong> Every second spent together is optimized for success and maximum learning impact</li>
+                    <li><strong>Conceptual Mastery:</strong> Focus on conceptual clarity, not rote learning – building long-term academic foundations</li>
+                    <li><strong>Measurable Growth:</strong> Track progress with regular assessments and personalized feedback</li>
+                    <li><strong>Confidence Building:</strong> Builds confidence and intellectual curiosity in learners</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COURSES SECTION ===== -->
+    <section id="courses">
+        <h2 class="section-title">Comprehensive Course Offerings</h2>
+        <p class="section-subtitle">Expert instruction across all major subjects and competitive exams</p>
+
+        <div class="courses-grid">
+            <!-- Mathematics -->
+            <div class="course-card fade-in">
+                <span class="course-icon">📘</span>
+                <h3>Mathematics</h3>
+                <ul>
+                    <li>Pre-Algebra</li>
+                    <li>Algebra I & II</li>
+                    <li>Geometry & Trigonometry</li>
+                    <li>Pre-Calculus</li>
+                    <li>AP Calculus AB & BC</li>
+                    <li>Middle School & High School Math</li>
+                    <li>Competitive Exams: SAT, ACT, PSAT, SSAT, GRE</li>
+                </ul>
+                <div class="course-info">
+                    <p><strong>Who it's for:</strong> Grades 6-12, Competitive exam aspirants</p>
+                    <p><strong>Outcomes:</strong> Strong mathematical foundation, exam readiness</p>
+                </div>
+            </div>
+
+            <!-- Science -->
+            <div class="course-card fade-in">
+                <span class="course-icon">🔬</span>
+                <h3>Science</h3>
+                <ul>
+                    <li>AP Physics</li>
+                    <li>AP Chemistry</li>
+                    <li>AP Biology</li>
+                    <li>Middle School Science</li>
+                    <li>High School Science</li>
+                    <li>CBSE & ICSE Science</li>
+                </ul>
+                <div class="course-info">
+                    <p><strong>Who it's for:</strong> Grades 6-12, AP exam students</p>
+                    <p><strong>Outcomes:</strong> Conceptual clarity, practical application</p>
+                </div>
+            </div>
+
+            <!-- Computer Science -->
+            <div class="course-card fade-in">
+                <span class="course-icon">💻</span>
+                <h3>Computer Science</h3>
+                <ul>
+                    <li>Python Programming</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>AP Computer Science Principles (AP CSP)</li>
+                    <li>AP Computer Science A (AP CSA)</li>
+                    <li>Web Development Fundamentals</li>
+                    <li>Coding Best Practices</li>
+                </ul>
+                <div class="course-info">
+                    <p><strong>Who it's for:</strong> Students & professionals learning coding</p>
+                    <p><strong>Outcomes:</strong> Practical coding skills, AP exam success</p>
+                </div>
+            </div>
+
+            <!-- Language -->
+            <div class="course-card fade-in">
+                <span class="course-icon">🗣️</span>
+                <h3>Language Skills</h3>
+                <ul>
+                    <li>SAT English & Reading</li>
+                    <li>Spoken English for Students</li>
+                    <li>Professional English</li>
+                    <li>Grammar & Communication</li>
+                    <li>Interactive Conversation Practice</li>
+                </ul>
+                <div class="course-info">
+                    <p><strong>Who it's for:</strong> Students & professionals learning English</p>
+                    <p><strong>Outcomes:</strong> Fluency, confidence, exam readiness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MODES OF LEARNING ===== -->
+    <section id="modes" class="section-light">
+        <h2 class="section-title">Flexible Learning Modes</h2>
+        <p class="section-subtitle">Choose the format that works best for you</p>
+
+        <div class="modes-grid">
+            <div class="mode-card fade-in">
+                <i class="fas fa-laptop mode-icon"></i>
+                <h4>Interactive Online Classes</h4>
+                <p>Perfect for global students! Join live, interactive sessions from anywhere in the world. Real-time collaboration, screen sharing, and digital whiteboards make learning engaging and effective.</p>
+            </div>
+            <div class="mode-card fade-in">
+                <i class="fas fa-users mode-icon"></i>
+                <h4>Focused Offline Batches</h4>
+                <p>In-person classes at our Jaipur location. Small batch sizes ensure individual attention, personalized feedback, and a collaborative learning environment.</p>
+            </div>
+            <div class="mode-card fade-in">
+                <i class="fas fa-user-graduate mode-icon"></i>
+                <h4>Personalized Learning Plans</h4>
+                <p>Customized learning paths tailored to each student's unique needs, learning pace, and academic goals. Small batch sizes and individual attention guaranteed.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FACULTY SECTION ===== -->
+    <section id="faculty" class="faculty-section">
+        <h2 class="section-title">Meet Your Expert Mentor</h2>
+        <p class="section-subtitle">Learn from an IIT-educated educator with global experience</p>
+
+        <div class="faculty-card">
+            <div class="faculty-header">
+                <div class="faculty-avatar">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <h3 class="faculty-name">Amit Gupta</h3>
+                <p class="faculty-title">Founder & Lead Mentor</p>
+                <p class="faculty-credentials">M.Tech, IIT Kharagpur | Ex-Scientist, DRDO</p>
+            </div>
+
+            <div class="faculty-info">
+                <div class="info-block">
+                    <h5><i class="fas fa-graduation-cap"></i> Education & Credentials</h5>
+                    <ul>
+                        <li>M.Tech from IIT Kharagpur</li>
+                        <li>Ex-Scientist at DRDO (Defence Research and Development Organisation)</li>
+                        <li>Published 4 papers in national & international journals</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h5><i class="fas fa-briefcase"></i> Professional Experience</h5>
+                    <ul>
+                        <li>15+ years of software development experience</li>
+                        <li>Worked at General Motors & Bosch</li>
+                        <li>Global work experience: Detroit (USA), Stuttgart (Germany), Bangalore, Hyderabad, Pune, Delhi</li>
+                    </ul>
+                </div>
+
+                <div class="info-block">
+                    <h5><i class="fas fa-chalkboard-teacher"></i> Teaching Excellence</h5>
+                    <ul>
+                        <li>6+ years of dedicated teaching experience</li>
+                        <li>Successfully taught 200+ students globally</li>
+                        <li>Global teaching exposure: USA, Denmark, Lithuania, New Zealand, Singapore, India, Panama, Dubai</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faculty-stats">
+                <div class="stat-box">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Students Taught</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">Years Teaching</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Industry Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Countries Taught In</div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <h5>Connect with Amit Gupta</h5>
+                <a href="https://www.linkedin.com/in/amit-gupta-mentor/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> LinkedIn Profile
+                </a>
+                <a href="https://www.linkedin.com/company/mns-classes/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> Company Page
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="section-light">
+        <h2 class="section-title">Student Success Stories</h2>
+        <p class="section-subtitle">Hear from students and parents who have experienced the MnS Classes difference</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"MnS Classes transformed my understanding of Calculus. The personalized approach and clear explanations helped me score a 5 on AP Calculus BC. Highly recommend!"</p>
+                <div class="testimonial-author">Student - AP Calculus</div>
+                <div class="testimonial-role">International Student, USA</div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"My son's math grades improved significantly after joining MnS Classes. The TDPA methodology really works - he now understands concepts deeply, not just memorizes formulas."</p>
+                <div class="testimonial-author">Parent</div>
+                <div class="testimonial-role">CBSE Student, Grade 10</div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Excellent coding classes! I learned Python and web development from scratch. The practical approach and real-world projects prepared me well for AP Computer Science."</p>
+                <div class="testimonial-author">Student</div>
+                <div class="testimonial-role">AP Computer Science, Grade 11</div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Amit Sir's teaching style is exceptional. His IIT background and industry experience bring a unique perspective. My daughter's confidence in math and science has grown tremendously."</p>
+                <div class="testimonial-author">Parent</div>
+                <div class="testimonial-role">ICSE Student, Grade 9</div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"The online classes are as effective as in-person sessions. The flexibility to learn from home while getting personalized attention is perfect for our busy schedule."</p>
+                <div class="testimonial-author">Student</div>
+                <div class="testimonial-role">SAT Prep, International Student</div>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Best investment in my child's education. The small batch sizes ensure individual attention, and the results speak for themselves - consistent grade improvements!"</p>
+                <div class="testimonial-author">Parent</div>
+                <div class="testimonial-role">IIT-JEE Aspirant</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Ready to start your academic journey? Let's talk!</p>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Location</h4>
+                    <p>Pushpanjali Colony</p>
+                    <p>Jaipur – 302015</p>
+                    <p>Rajasthan, India</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:+919241229184">+91 9241229184</a>
+                    <p style="margin-top: 10px; font-size: 0.95rem;">Available for calls & WhatsApp</p>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:info@mnsclasses.com">info@mnsclasses.com</a>
+                    <p style="margin-top: 10px; font-size: 0.95rem;">We respond within 24 hours</p>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <h3 style="font-size: 2rem; margin-bottom: 20px; font-weight: 700;">Ready to Excel?</h3>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.95;">Join MnS Classes and transform your academic journey</p>
+                <div class="contact-cta-buttons">
+                    <a href="tel:+919241229184" class="btn-primary-custom">
+                        <i class="fas fa-phone"></i> Book a Free Demo Class
+                    </a>
+                    <a href="tel:+919241229184" class="btn-secondary-custom">
+                        <i class="fas fa-comments"></i> Talk to a Mentor
+                    </a>
+                    <a href="#contact" class="btn-secondary-custom" onclick="alert('Enrollment form coming soon! Please call us at +91 9241229184'); return false;">
+                        <i class="fas fa-user-plus"></i> Enroll Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">MnS Classes</div>
+            <p class="footer-tagline">Mentoring for Success</p>
+            <p style="font-size: 1.1rem; color: rgba(255,255,255,0.9); margin-bottom: 30px;">
+                Personalized Learning. Proven Results.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#philosophy">Philosophy</a>
+                <a href="#courses">Courses</a>
+                <a href="#faculty">Faculty</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-info">
+                <p><strong>Established:</strong> June 2019</p>
+                <p><strong>Location:</strong> Pushpanjali Colony, Jaipur – 302015, Rajasthan, India</p>
+                <p><strong>Phone:</strong> <a href="tel:+919241229184" style="color: var(--accent-orange);">+91 9241229184</a></p>
+                <p style="margin-top: 20px; opacity: 0.7;">&copy; 2025 MnS Classes - Mentoring for Success. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Add active state to nav links on scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
